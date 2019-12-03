@@ -1,0 +1,24 @@
+{
+    "name": "mobaguides/arena-of-valor-api",
+    "description": "An API Wrapper to fetch Arena Of Valor Data",
+    "require": {
+        "php": ">=7.2.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MobaGuides\\ArenaOfValorApi\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikola Ivanovic",
+            "email": "nivanovic85@gmail.com"
+        }
+    ]
+}
