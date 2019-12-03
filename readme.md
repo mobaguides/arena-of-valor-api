@@ -1,6 +1,6 @@
 # Arena of Valor API
 
-This is an inofficial PHP API wrapper for the mobile game "Arena of Valor". Currently it supports fetching Heroes, Hero Details and Images.
+This is an in-official PHP API wrapper for the mobile game "Arena of Valor". Currently it supports fetching Heroes, Hero Details and Images.
 
 ## Requirements
 
@@ -49,26 +49,22 @@ $hero = ArenaOfValor::make(Hero::class);
 var_dump($hero->detail(106));
 ````
 
-#### Find Image
-
-The Image map is fetched one time only and calls on the same
-Image Fetcher instance will only make one HTTP request. Subsequent
-method calls on the same instance will use the cached image map. 
+#### Get Skill icon Image
 
 ````php
 use MobaGuides\ArenaOfValorApi\ArenaOfValor;
 use MobaGuides\ArenaOfValorApi\Fetchers\Image;
 
 $image = ArenaOfValor::make(Image::class);
-var_dump($image->find('HeroHead001.png'));
+var_dump($image->skillIcon(10610)); // Krixi's Flutter skill icon
 ````
 
-#### Find Hero Profile Image
+#### Get Hero Profile Image
 
 ````php
 use MobaGuides\ArenaOfValorApi\ArenaOfValor;
 use MobaGuides\ArenaOfValorApi\Fetchers\Image;
 
 $image = ArenaOfValor::make(Image::class);
-var_dump($image->heroAvatar(1)); // Hero Avatar of Miya
+var_dump($image->heroAvatar(106)); // Hero Avatar of Krixi
 ````

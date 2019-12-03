@@ -22,4 +22,10 @@ class ImageFetcherTest extends TestCase
         $result = $this->imageFetcher->heroAvatar(106);
         $this->assertEquals('https://www.arenaofvalor.com/images/heroes/pic_122_122/106.jpg', $result);
     }
+
+    public function test_it_returns_an_skill_icon()
+    {
+        $result = $this->imageFetcher->skillIcon(10610);
+        $this->assertEquals('https://www.arenaofvalor.com/images/heroes/skill/10610.png', $result);
+    }
 }
