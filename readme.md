@@ -49,7 +49,7 @@ $hero = ArenaOfValor::make(Hero::class);
 var_dump($hero->detail(106));
 ````
 
-#### Get Skill icon Image
+#### Get Skill Image
 
 ````php
 use MobaGuides\ArenaOfValorApi\ArenaOfValor;
